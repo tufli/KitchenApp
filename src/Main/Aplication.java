@@ -14,11 +14,12 @@ public class Aplication {
 		
 		cupA.setLiquidVolume(cupA.getLiquidVolume()-50);
 		cupB.setLiquidVolume(cupB.getLiquidVolume()+50);
-		bigCupD.setLiquidVolume(bigCupD.getLiquidVolume()+cupB.getLiquidVolume());
+		bigCupD.setLiquidVolume(cupB.getLiquidVolume()+bigCupD.getLiquidVolume());
+		cupB.setLiquidVolume(0);
 		
-		//cupA.info();
-		//cupB.info();
-		//smallCupC.info();
+		cupA.info();
+		cupB.info();
+		smallCupC.info();
 		bigCupD.info();
 	}
 }
